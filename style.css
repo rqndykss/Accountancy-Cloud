@@ -8,7 +8,6 @@
 
 ul {
     list-style-type: none;
-    
 }
 
 a {
@@ -19,8 +18,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-
-
+/* header start */
 .header {
     padding-top: 27px;
 }
@@ -28,70 +26,354 @@ body {
 .container {
     max-width: 1150px;
     margin: auto;
+    padding: 0 20px; 
 }
 
 .header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
-
-.header__logo {
-
-}
-
-.header__links {
-    
-}
-
-.header__nav {
-
-}
-
 
 .header__list {
     display: flex;
     gap: 22px;
-    
 }
 
-.header__link a{
-    color:  #000;
-
+.header__link a {
+    color: #000;
 }
 
 .buttons {
     display: flex;
     gap: 18px;
+    align-items: center;
 }
 
 .login__btn {
-    border-color: #000;
-    border-style: solid;
-    border-width: 1px;
-    padding: 12px 20px 12px 20px;
+    border: 1px solid #000;
+    padding: 12px 20px;
     border-radius: 40px;
 }   
 
 .login {
     font-weight: 700;
-font-size: 18px;
-line-height: 140%;
-color: #000;
+    font-size: 18px;
+    color: #000;
 }
 
 .talk__btn {
     background: #000;
-    border-style: solid;
-    border-width: 1px;
-    padding: 12px 25px 12px 25px;
+    border: 1px solid #000;
+    padding: 12px 25px;
     border-radius: 40px;
 }
 
 .talk__expert {
     font-weight: 700;
     font-size: 18px;
-    line-height: 140%;
     color: #fff;
+}
+
+/* main */
+.hero__container {
+    position: relative;
+    padding-bottom: 50px; 
+}
+
+.hero__text {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title {
+    max-width: 491px;
+    font-weight: 700;
+    font-size: 77px;
+    line-height: 108%;
+    color: #000;
+}
+
+.hero__desc {
+    margin-top: 27px;
+    max-width: 476px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 153%;
+    color: #000;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    max-width: 667px;
+    max-height: 517px;
+    z-index: -1; 
+}
+
+.switching {
+    margin-top: 79px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.talk-to-us-btn {
+    background: #000;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 40px;
+    display: inline-block; 
+}
+
+/* Finance section */
+.finance {
+    margin-top: 137px;
+}
+
+.finance__container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.finance__content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.finance__text {
+    max-width: 443px;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 101%;
+    color: #000;  
+}
+
+.finance__desc {
+    max-width: 563px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 153%;
+    color: #000;
+}
+
+.contact-a {
+    text-decoration: underline;
+    color: #335c81;
+}
+
+/* Why Switch Section */
+.why-switch-section {
+    margin-top: 188px;
+    margin-bottom: 100px;
+}
+
+.why__switch-title {
+    font-weight: 700;
+    font-size: 58px;
+    color: #000;
+    margin-bottom: 50px; 
+}
+
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__image {
+   max-width: 200px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 129%;
+    color: #000
+}
+
+.card__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #000;
+    max-width: 295px;
+    margin-bottom: 71px;
+}
+
+.discover-btn {
+    
+}
+
+.discover__button {
+    background: #F7B2B7;
+    color: #000000;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 126px;
+}
+
+.plans {
+    
+    background: #FDECED;
+}
+
+.plans__title {
+    padding-top: 54px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 99%;
+    color: #000
+}
+
+
+
+
+
+
+.companies-section {
+
+}
+
+
+.companies-text {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 133%;
+    color: #000;
+    margin-top: 20px;
+}
+.cards__wrapper-companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    align-items: center;
+}
+
+.card-companies {
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo {
+
+}
+
+.companies-layout {
+    margin-top: 129px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 99px;
+    
+}
+
+
+
+.ac-hub-section {
+
+}
+
+.ac-hub-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.ac-hub-text {
+    
+}
+
+.ac-hub__content {
+  max-width: 500px;
+}
+
+.ac-hub-content {
+    margin-top: 192px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.h5-ac-hub {
+    
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 99%;
+    color: #000;
+}
+
+.ac-hub-desc {
+font-weight: 400;
+font-size: 20px;
+line-height: 153%;
+color: #000;
+max-width: 547px;
+}
+
+.ac-hub-img {
+    
+  
+  height: auto;
+    
+
+}
+
+.view-hub-btn {
+    margin-top: 79px;
+}
+
+.view-hub__button {
+    background-color: #F7B2B7;
+    padding: 15px 35px;
+    border-radius: 40px;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.images-ac {
+    margin-top: 143px;
+    display: block;
+  position: absolute;
+  left: 65%;
+  flex-shrink: 0;
+  max-width: 483px;
+  top: 0;
+  bottom: 50px;
+    z-index: -1;
 }
